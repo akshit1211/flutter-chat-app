@@ -44,7 +44,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
                   },
                 )
               : const SizedBox.shrink(),
-          prefix: Icon(widget.icon, color: Colors.blue),
+          prefixIcon: Icon(widget.icon, color: Colors.black,),
           hintText: widget.hintText,
           border: const OutlineInputBorder(
             borderRadius: BorderRadius.all(Radius.circular(10)),
