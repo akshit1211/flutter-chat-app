@@ -47,7 +47,7 @@ class _LoginScreenState extends State<LoginScreen> {
           onTap: () {
             context.navigateToScreen(RegistrationScreen());
           },
-          child: const Text("New User? Create a new account"),
+          child: const Text("New User? Create a new account."),
         )
       ],
     ));
@@ -58,7 +58,7 @@ class _LoginScreenState extends State<LoginScreen> {
         .signInWithEmailAndPassword(
             email: emailController.text, password: passwordController.text)
         .then((value) {
-      context.navigateToScreen(ChatScreen(), isReplace: true);
+      context.navigateToScreen(const ChatScreen(), isReplace: true);
     });
   }
 }

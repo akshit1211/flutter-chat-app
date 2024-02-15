@@ -8,4 +8,12 @@ extension BuildContextExtension on BuildContext {
     }
     Navigator.of(this).push(MaterialPageRoute(builder: (_) => widget));
   }
+
+  double getWidth({double percentage = 1}) {
+    return MediaQuery.of(this).size.width * percentage;
+  }
+  
+  double getHeight({double percentage = 1}) {
+    return MediaQuery.of(this).size.height * percentage;
+  }
 }
